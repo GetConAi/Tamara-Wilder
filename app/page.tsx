@@ -80,23 +80,23 @@ export default function Home() {
           initial="hidden"
           animate="show"
         >
-          <div className="m-3 rounded-[20px] border border-navy/10 text-center px-8 py-12 md:px-16 md:py-16">
+          <div className="text-center px-8 py-9 md:px-14 md:py-11">
             <motion.p
               variants={fadeUp}
-              className="text-xs tracking-[0.3em] uppercase text-navy/70 font-sans font-semibold mb-6 text-shadow-2xs"
+              className="text-xs tracking-[0.3em] uppercase text-navy/70 font-sans font-semibold mb-4 text-shadow-2xs"
             >
               Faith · Identity · Healing · Restoration
             </motion.p>
             <motion.h1
               variants={fadeUp}
-              className="font-serif text-5xl md:text-7xl font-black text-navy leading-tight mb-5 text-shadow-sm"
+              className="font-serif text-4xl md:text-5xl font-black text-navy leading-tight mb-3 text-shadow-sm"
             >
               Tamara Wilder
             </motion.h1>
             <motion.div
               variants={fadeUp}
               aria-hidden="true"
-              className="flex items-center justify-center gap-3 mb-5"
+              className="flex items-center justify-center gap-3 mb-3"
             >
               <span className="h-px w-10 bg-pink/70" />
               <span className="block w-2 h-2 rotate-45 bg-pink" />
@@ -104,13 +104,13 @@ export default function Home() {
             </motion.div>
             <motion.p
               variants={fadeUp}
-              className="text-sm md:text-base tracking-[0.3em] uppercase text-navy font-sans font-bold mb-8 text-shadow-2xs"
+              className="text-sm md:text-base tracking-[0.3em] uppercase text-navy font-sans font-bold mb-6 text-shadow-2xs"
             >
               Speaker · Coach · Teacher
             </motion.p>
             <motion.p
               variants={fadeUp}
-              className="font-serif text-xl md:text-2xl text-navy font-semibold italic mb-10 leading-relaxed text-shadow-2xs"
+              className="font-serif text-lg md:text-xl text-navy font-semibold italic mb-8 leading-relaxed text-shadow-2xs"
             >
               Through devotionals, reflective writing, and inspirational
               storytelling, Tamara creates space for readers to slow down,
@@ -134,7 +134,7 @@ export default function Home() {
             <motion.div
               variants={fadeUp}
               aria-hidden="true"
-              className="flex items-center justify-center gap-3 mt-10"
+              className="flex items-center justify-center gap-3 mt-8"
             >
               <span className="h-px w-8 bg-pink/40" />
               <span className="block w-1.5 h-1.5 rotate-45 bg-pink/50" />
