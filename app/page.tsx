@@ -65,37 +65,43 @@ function BookPreviewCard({
 export default function Home() {
   return (
     <>
-      {/* Hero with banner background */}
-      <section className="relative w-full min-h-[64vh] sm:min-h-[72vh] md:min-h-[85vh] flex items-center justify-center px-6 py-24 overflow-hidden">
-        <Image
-          src="/banner.png"
-          alt="Tamara Wilder — Speaker, Coach, Teacher"
-          fill
-          priority
-          className="object-cover"
-        />
-        <div className="absolute inset-0 bg-gradient-to-b from-navy/20 via-navy/10 to-navy/25" />
+      {/* Hero */}
+      <section
+        className="relative w-full min-h-[64vh] sm:min-h-[72vh] md:min-h-[80vh] flex items-center justify-center px-6 py-24 overflow-hidden bg-cream"
+        style={{
+          backgroundImage: "url('/hero-bg.png')",
+          backgroundRepeat: "repeat",
+          backgroundSize: "480px 480px",
+        }}
+      >
         <motion.div
-          className="relative z-10 max-w-2xl mx-auto text-center bg-navy/55 backdrop-blur-md rounded-3xl px-8 py-12 md:px-16 md:py-16 shadow-2xl"
+          className="relative z-10 max-w-2xl mx-auto text-center"
           variants={stagger}
           initial="hidden"
           animate="show"
         >
           <motion.p
             variants={fadeUp}
-            className="text-xs tracking-[0.3em] uppercase text-pink font-sans mb-6"
+            className="text-xs tracking-[0.3em] uppercase text-navy/50 font-sans mb-6"
           >
             Faith · Identity · Healing · Restoration
           </motion.p>
           <motion.h1
             variants={fadeUp}
-            className="font-serif text-5xl md:text-7xl font-bold text-white leading-tight mb-6"
+            className="font-serif text-5xl md:text-7xl font-bold text-navy leading-tight mb-4"
           >
             Tamara Wilder
           </motion.h1>
+          <motion.div variants={fadeUp} className="w-16 h-0.5 bg-pink mx-auto mb-4" />
           <motion.p
             variants={fadeUp}
-            className="font-serif text-xl md:text-2xl text-white/95 italic mb-10 leading-relaxed"
+            className="text-sm md:text-base tracking-[0.3em] uppercase text-navy/60 font-sans mb-8"
+          >
+            Speaker · Coach · Teacher
+          </motion.p>
+          <motion.p
+            variants={fadeUp}
+            className="font-serif text-xl md:text-2xl text-navy/70 italic mb-10 leading-relaxed"
           >
             Writing the stories that faith writes on the heart — of restoration,
             identity, and becoming who God says you are.
@@ -103,13 +109,13 @@ export default function Home() {
           <motion.div variants={fadeUp} className="flex flex-wrap gap-4 justify-center">
             <Link
               href="/books"
-              className="px-8 py-3.5 bg-pink text-navy font-semibold text-sm tracking-widest uppercase font-sans rounded hover:bg-pink/80 transition-colors"
+              className="px-8 py-3.5 bg-navy text-white text-sm tracking-widest uppercase font-sans rounded hover:bg-navy-light transition-colors"
             >
               Explore the Books
             </Link>
             <Link
               href="/about"
-              className="px-8 py-3.5 border border-white text-white text-sm tracking-widest uppercase font-sans rounded hover:bg-white/10 transition-colors"
+              className="px-8 py-3.5 border border-navy text-navy text-sm tracking-widest uppercase font-sans rounded hover:bg-pink/30 transition-colors"
             >
               About Tamara
             </Link>
