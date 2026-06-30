@@ -112,8 +112,10 @@ export default function Home() {
               variants={fadeUp}
               className="font-serif text-xl md:text-2xl text-navy font-semibold italic mb-10 leading-relaxed text-shadow-2xs"
             >
-              Writing the stories that faith writes on the heart. Stories of
-              restoration, identity, and becoming who God says you are.
+              Through devotionals, reflective writing, and inspirational
+              storytelling, Tamara creates space for readers to slow down,
+              listen inwardly, and recognize God&apos;s hand in every season
+              of life.
             </motion.p>
             <motion.div variants={fadeUp} className="flex flex-wrap gap-4 justify-center">
               <Link
