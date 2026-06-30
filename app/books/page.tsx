@@ -2,6 +2,7 @@
 
 import { motion, type Variants } from "framer-motion";
 import Image from "next/image";
+import Link from "next/link";
 import EmailSignup from "@/components/EmailSignup";
 
 const fadeUp: Variants = {
@@ -131,12 +132,12 @@ export default function BooksPage() {
               reflection, scripture, and prompts to help readers walk through
               their own journey of faith, identity, and restoration.
             </p>
-            <a
-              href="mailto:Tamara@tamarawilder.com?subject=Becoming%20Workbook%20Order&body=Hi%20Tamara%2C%20I'd%20like%20to%20order%20a%20copy%20of%20the%20Becoming%20Workbook."
+            <Link
+              href="/order"
               className="inline-block px-8 py-3.5 bg-pink text-navy font-semibold text-sm tracking-widest uppercase font-sans rounded hover:bg-pink/80 transition-colors"
             >
               Order the Workbook
-            </a>
+            </Link>
           </motion.div>
         </motion.div>
       </section>
