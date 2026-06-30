@@ -32,7 +32,7 @@ function BookPreviewCard({
     <motion.div variants={fadeUp}>
       <Link
         href={href}
-        className="group block border border-navy/15 rounded-lg overflow-hidden hover:shadow-lg transition-shadow duration-300"
+        className="group block border border-navy/15 rounded-lg overflow-hidden hover:border-pink hover:shadow-[0_12px_30px_-12px_rgba(246,210,216,0.9)] transition-all duration-300"
       >
         <div className="flex justify-center mt-6">
           <Image
@@ -64,9 +64,20 @@ function BookPreviewCard({
 export default function Home() {
   return (
     <>
+      {/* Banner */}
+      <div className="relative w-full h-[38vh] min-h-[240px] max-h-[440px]">
+        <Image
+          src="/banner.png"
+          alt="Tamara Wilder — Speaker, Coach, Teacher"
+          fill
+          priority
+          className="object-cover"
+        />
+      </div>
+
       {/* Hero */}
-      <section className="relative bg-cream min-h-[85vh] flex items-center justify-center px-6 py-20">
-        <div className="absolute inset-0 bg-gradient-to-b from-white to-cream" />
+      <section className="relative bg-cream flex items-center justify-center px-6 py-16 md:py-20">
+        <div className="absolute inset-0 bg-gradient-to-b from-pink/15 via-white to-cream" />
         <motion.div
           className="relative z-10 max-w-3xl mx-auto text-center"
           variants={stagger}
@@ -101,7 +112,7 @@ export default function Home() {
             </Link>
             <Link
               href="/about"
-              className="px-8 py-3.5 border border-navy text-navy text-sm tracking-widest uppercase font-sans rounded hover:bg-navy/5 transition-colors"
+              className="px-8 py-3.5 border border-navy text-navy text-sm tracking-widest uppercase font-sans rounded hover:bg-pink/15 transition-colors"
             >
               About Tamara
             </Link>
@@ -118,7 +129,7 @@ export default function Home() {
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          <div className="w-12 h-0.5 bg-navy/30 mx-auto mb-8" />
+          <div className="w-12 h-0.5 bg-pink mx-auto mb-8" />
           <p className="font-sans text-navy/80 text-lg leading-relaxed">
             Tamara Wilder is a writer, mentor, and faith-driven leader whose
             words invite readers into the sacred space of healing and
@@ -126,7 +137,25 @@ export default function Home() {
             means to walk in obedience, discover your God-given identity, and
             trust the process of becoming.
           </p>
-          <div className="w-12 h-0.5 bg-navy/30 mx-auto mt-8" />
+          <div className="w-12 h-0.5 bg-pink mx-auto mt-8" />
+        </motion.div>
+      </section>
+
+      {/* Inspirational pull-quote */}
+      <section className="py-16 px-6 bg-pink/15">
+        <motion.div
+          className="max-w-3xl mx-auto text-center"
+          initial={{ opacity: 0, y: 16 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+        >
+          <p className="font-serif text-2xl md:text-3xl italic text-navy leading-relaxed">
+            &ldquo;Healing isn&apos;t a destination — it&apos;s a daily
+            becoming. One day, one prayer, one step of faith at a
+            time.&rdquo;
+          </p>
+          <div className="w-10 h-0.5 bg-navy/30 mx-auto mt-8" />
         </motion.div>
       </section>
 
@@ -148,7 +177,7 @@ export default function Home() {
             </h2>
           </motion.div>
           <motion.div
-            className="grid grid-cols-1 sm:grid-cols-2 gap-8 max-w-4xl mx-auto"
+            className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl mx-auto"
             variants={stagger}
             initial="hidden"
             whileInView="show"
@@ -159,6 +188,12 @@ export default function Home() {
               tagline="A Journey of Faith and Restoration"
               href="/books"
               src="/becoming.png"
+            />
+            <BookPreviewCard
+              title="Becoming: The Workbook"
+              tagline="A Journey of Faith and Restoration"
+              href="/books"
+              src="/workbook.png"
             />
             <BookPreviewCard
               title="Letters to My Father"

@@ -48,7 +48,7 @@ export default function ContactPage() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <div className="w-10 h-0.5 bg-navy/20 mb-8" />
+            <div className="w-10 h-0.5 bg-pink mb-8" />
             <h2 className="font-serif text-2xl font-bold text-navy mb-4">
               Let&apos;s Connect
             </h2>
@@ -103,7 +103,7 @@ export default function ContactPage() {
                 animate={{ opacity: 1, y: 0 }}
                 className="h-full flex flex-col items-center justify-center text-center py-12"
               >
-                <div className="w-10 h-0.5 bg-navy/20 mx-auto mb-6" />
+                <div className="w-10 h-0.5 bg-pink mx-auto mb-6" />
                 <h3 className="font-serif text-2xl font-bold text-navy mb-3">
                   Message Received
                 </h3>

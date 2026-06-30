@@ -52,7 +52,7 @@ export default function AboutPage() {
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.1 }}
           >
-            <div className="w-10 h-0.5 bg-navy/20 mb-8" />
+            <div className="w-10 h-0.5 bg-pink mb-8" />
             <h2 className="font-serif text-3xl font-bold text-navy mb-6">
               Tamara Wilder
             </h2>
@@ -83,7 +83,7 @@ export default function AboutPage() {
               </Link>
               <Link
                 href="/contact"
-                className="px-6 py-3 border border-navy text-navy text-sm tracking-widest uppercase font-sans rounded hover:bg-navy/5 transition-colors"
+                className="px-6 py-3 border border-navy text-navy text-sm tracking-widest uppercase font-sans rounded hover:bg-pink/15 transition-colors"
               >
                 Get in Touch
               </Link>
@@ -104,7 +104,7 @@ export default function AboutPage() {
           >
             {["Faith", "Identity", "Healing", "Restoration"].map((theme) => (
               <div key={theme}>
-                <div className="w-8 h-0.5 bg-navy/20 mx-auto mb-4" />
+                <div className="w-8 h-0.5 bg-pink mx-auto mb-4" />
                 <p className="font-serif text-navy font-semibold text-lg">
                   {theme}
                 </p>

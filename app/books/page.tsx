@@ -61,7 +61,7 @@ export default function BooksPage() {
             <p className="font-serif text-lg italic text-navy/60 mb-6">
               A Journey of Faith and Restoration
             </p>
-            <div className="w-10 h-0.5 bg-navy/20 mb-6" />
+            <div className="w-10 h-0.5 bg-pink mb-6" />
             <p className="font-sans text-navy/70 leading-relaxed mb-4">
               <em>Becoming</em> is a faith-centered novel that follows one
               woman&apos;s courageous journey through loss, surrender, and
@@ -88,7 +88,58 @@ export default function BooksPage() {
       </section>
 
       <div className="max-w-5xl mx-auto px-6">
-        <div className="border-t border-navy/10" />
+        <div className="border-t border-pink/40" />
+      </div>
+
+      {/* Becoming: The Workbook */}
+      <section className="py-20 px-6 bg-pink/5">
+        <motion.div
+          className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center"
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: true }}
+          variants={stagger}
+        >
+          <motion.div variants={fadeUp} className="flex justify-center md:order-2">
+            <Image
+              src="/workbook.png"
+              alt="Becoming: The Workbook — A Journey of Faith and Restoration — book cover"
+              width={240}
+              height={360}
+              className="rounded shadow-md"
+            />
+          </motion.div>
+          <motion.div variants={fadeUp} className="md:order-1">
+            <p className="text-xs tracking-[0.25em] uppercase text-navy/50 font-sans mb-3">
+              Companion Workbook
+            </p>
+            <h2 className="font-serif text-3xl md:text-4xl font-bold text-navy mb-2">
+              Becoming: The Workbook
+            </h2>
+            <p className="font-serif text-lg italic text-navy/60 mb-2">
+              A Journey of Faith and Restoration
+            </p>
+            <span className="inline-block px-3 py-1 bg-pink/50 text-navy/80 text-xs tracking-widest uppercase font-sans rounded mb-6">
+              Available Now
+            </span>
+            <div className="w-10 h-0.5 bg-pink mb-6" />
+            <p className="font-sans text-navy/70 leading-relaxed mb-8">
+              A companion workbook to the novel <em>Becoming</em> — guided
+              reflection, scripture, and prompts to help readers walk through
+              their own journey of faith, identity, and restoration.
+            </p>
+            <a
+              href="mailto:Tamara@tamarawilder.com?subject=Becoming%20Workbook%20Order&body=Hi%20Tamara%2C%20I'd%20like%20to%20order%20a%20copy%20of%20the%20Becoming%20Workbook."
+              className="inline-block px-8 py-3.5 bg-navy text-white text-sm tracking-widest uppercase font-sans rounded hover:bg-navy-light transition-colors"
+            >
+              Order the Workbook
+            </a>
+          </motion.div>
+        </motion.div>
+      </section>
+
+      <div className="max-w-5xl mx-auto px-6">
+        <div className="border-t border-pink/40" />
       </div>
 
       {/* Letters to My Father */}
@@ -122,7 +173,7 @@ export default function BooksPage() {
             <span className="inline-block px-3 py-1 bg-gold/20 text-navy/80 text-xs tracking-widest uppercase font-sans rounded mb-6">
               Coming Soon
             </span>
-            <div className="w-10 h-0.5 bg-navy/20 mb-6" />
+            <div className="w-10 h-0.5 bg-pink mb-6" />
             <p className="font-sans text-navy/70 leading-relaxed mb-4">
               <em>Letters to My Father</em> is an intimate collection of poetry
               written as correspondence from a daughter to her Heavenly Father.
@@ -152,11 +203,11 @@ export default function BooksPage() {
       </section>
 
       <div className="max-w-5xl mx-auto px-6">
-        <div className="border-t border-navy/10" />
+        <div className="border-t border-pink/40" />
       </div>
 
       {/* Faith Focus Flow: 365 Day Devotional */}
-      <section className="py-20 px-6">
+      <section className="py-20 px-6 bg-pink/5">
         <motion.div
           className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center"
           initial="hidden"
@@ -183,7 +234,7 @@ export default function BooksPage() {
             <span className="inline-block px-3 py-1 bg-gold/20 text-navy/80 text-xs tracking-widest uppercase font-sans rounded mb-6">
               Coming July 31, 2025
             </span>
-            <div className="w-10 h-0.5 bg-navy/20 mb-6" />
+            <div className="w-10 h-0.5 bg-pink mb-6" />
             <p className="font-sans text-navy/70 leading-relaxed mb-8">
               A 365-day devotional designed to help you live aligned, grounded,
               and whole — one intentional day at a time. Through scripture,
@@ -208,7 +259,7 @@ export default function BooksPage() {
       </section>
 
       <div className="max-w-5xl mx-auto px-6">
-        <div className="border-t border-navy/10" />
+        <div className="border-t border-pink/40" />
       </div>
 
       {/* Faith Focus Flow Journal */}
@@ -239,7 +290,7 @@ export default function BooksPage() {
             <span className="inline-block px-3 py-1 bg-gold/20 text-navy/80 text-xs tracking-widest uppercase font-sans rounded mb-6">
               Coming July 31, 2025
             </span>
-            <div className="w-10 h-0.5 bg-navy/20 mb-6" />
+            <div className="w-10 h-0.5 bg-pink mb-6" />
             <p className="font-sans text-navy/70 leading-relaxed mb-8">
               A companion scripture journal to the Faith Focus Flow devotional
               — space for reflection, prayer, and writing alongside your daily
