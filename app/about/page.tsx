@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Image from "next/image";
 import Link from "next/link";
 
 export default function AboutPage() {
@@ -33,14 +34,14 @@ export default function AboutPage() {
             transition={{ duration: 0.6 }}
             className="flex justify-center"
           >
-            <div className="w-full max-w-[320px] aspect-square bg-navy/5 border border-navy/10 rounded-full flex items-center justify-center shadow-md">
-              <div className="text-center">
-                <div className="w-12 h-0.5 bg-navy/20 mx-auto mb-3" />
-                <p className="font-serif text-navy/30 text-sm italic">
-                  Author Photo
-                </p>
-                <div className="w-12 h-0.5 bg-navy/20 mx-auto mt-3" />
-              </div>
+            <div className="w-full max-w-[320px] aspect-square rounded-full overflow-hidden shadow-md border border-navy/10">
+              <Image
+                src="/author.jpg"
+                alt="Tamara Wilder, author"
+                width={320}
+                height={320}
+                className="object-cover w-full h-full"
+              />
             </div>
           </motion.div>
 

@@ -1,6 +1,7 @@
 "use client";
 
 import { motion, type Variants } from "framer-motion";
+import Image from "next/image";
 import EmailSignup from "@/components/EmailSignup";
 
 const fadeUp: Variants = {
@@ -12,20 +13,6 @@ const stagger: Variants = {
   hidden: {},
   show: { transition: { staggerChildren: 0.15 } },
 };
-
-function CoverPlaceholder() {
-  return (
-    <div className="relative w-full max-w-[240px] mx-auto aspect-[2/3] bg-navy/5 border border-navy/10 rounded flex items-center justify-center shadow-md">
-      <div className="text-center px-6">
-        <div className="w-16 h-0.5 bg-navy/20 mx-auto mb-4" />
-        <p className="font-serif text-navy/30 text-sm italic leading-relaxed">
-          Cover Image
-        </p>
-        <div className="w-16 h-0.5 bg-navy/20 mx-auto mt-4" />
-      </div>
-    </div>
-  );
-}
 
 export default function BooksPage() {
   return (
@@ -56,7 +43,13 @@ export default function BooksPage() {
           variants={stagger}
         >
           <motion.div variants={fadeUp} className="flex justify-center">
-            <CoverPlaceholder />
+            <Image
+              src="/becoming.png"
+              alt="Becoming: A Journey of Faith and Restoration — book cover"
+              width={240}
+              height={360}
+              className="rounded shadow-md"
+            />
           </motion.div>
           <motion.div variants={fadeUp}>
             <p className="text-xs tracking-[0.25em] uppercase text-navy/50 font-sans mb-3">
@@ -108,7 +101,13 @@ export default function BooksPage() {
           variants={stagger}
         >
           <motion.div variants={fadeUp} className="flex justify-center md:order-2">
-            <CoverPlaceholder />
+            <Image
+              src="/letters.png"
+              alt="Letters to My Father: From the Daughter of the King of Kings — book cover"
+              width={240}
+              height={360}
+              className="rounded shadow-md"
+            />
           </motion.div>
           <motion.div variants={fadeUp} className="md:order-1">
             <p className="text-xs tracking-[0.25em] uppercase text-navy/50 font-sans mb-3">
