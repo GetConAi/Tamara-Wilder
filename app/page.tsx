@@ -101,10 +101,10 @@ export default function Home() {
           </motion.p>
           <motion.p
             variants={fadeUp}
-            className="font-serif text-xl md:text-2xl text-navy/85 font-medium italic mb-10 leading-relaxed"
+            className="font-serif text-xl md:text-2xl text-navy font-semibold italic mb-10 leading-relaxed text-shadow-2xs"
           >
-            Writing the stories that faith writes on the heart — of restoration,
-            identity, and becoming who God says you are.
+            Writing the stories that faith writes on the heart. Stories of
+            restoration, identity, and becoming who God says you are.
           </motion.p>
           <motion.div variants={fadeUp} className="flex flex-wrap gap-4 justify-center">
             <Link
