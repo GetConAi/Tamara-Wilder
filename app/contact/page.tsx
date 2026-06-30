@@ -54,7 +54,7 @@ export default function ContactPage() {
             </h2>
             <p className="font-sans text-navy/70 leading-relaxed mb-8">
               Whether you&apos;d like to share how a book impacted your life,
-              explore speaking opportunities, or simply reach out — Tamara
+              explore speaking opportunities, or simply reach out, Tamara
               would love to hear from you.
             </p>
 

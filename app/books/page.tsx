@@ -49,7 +49,7 @@ export default function BooksPage() {
           <motion.div variants={fadeUp} className="flex justify-center">
             <Image
               src="/becoming.png"
-              alt="Becoming: A Journey of Faith and Restoration — book cover"
+              alt="Becoming: A Journey of Faith and Restoration, book cover"
               width={240}
               height={360}
               className="rounded shadow-md"
@@ -71,7 +71,7 @@ export default function BooksPage() {
               woman&apos;s courageous journey through loss, surrender, and
               unexpected grace. When everything she thought defined her is
               stripped away, she discovers that obedience is the doorway to
-              restoration — and that the life God has planned is far greater
+              restoration, and that the life God has planned is far greater
               than the one she had mapped out.
             </p>
             <p className="font-sans text-navy/70 leading-relaxed mb-8">
@@ -107,7 +107,7 @@ export default function BooksPage() {
           <motion.div variants={fadeUp} className="flex justify-center md:order-2">
             <Image
               src="/workbook.png"
-              alt="Becoming: The Workbook — A Journey of Faith and Restoration — book cover"
+              alt="Becoming: The Workbook, A Journey of Faith and Restoration, book cover"
               width={240}
               height={360}
               className="rounded shadow-md"
@@ -128,7 +128,7 @@ export default function BooksPage() {
             </span>
             <div className="w-10 h-0.5 bg-pink mb-6" />
             <p className="font-sans text-navy/70 leading-relaxed mb-8">
-              A companion workbook to the novel <em>Becoming</em> — guided
+              A companion workbook to the novel <em>Becoming</em>, guided
               reflection, scripture, and prompts to help readers walk through
               their own journey of faith, identity, and restoration.
             </p>
@@ -158,7 +158,7 @@ export default function BooksPage() {
           <motion.div variants={fadeUp} className="flex justify-center md:order-2">
             <Image
               src="/letters.png"
-              alt="Letters to My Father: From the Daughter of the King of Kings — book cover"
+              alt="Letters to My Father: From the Daughter of the King of Kings, book cover"
               width={240}
               height={360}
               className="rounded shadow-md"
@@ -181,7 +181,7 @@ export default function BooksPage() {
             <p className="font-sans text-navy/70 leading-relaxed mb-4">
               <em>Letters to My Father</em> is an intimate collection of poetry
               written as correspondence from a daughter to her Heavenly Father.
-              Each poem is a prayer, a confession, or a celebration — exploring
+              Each poem is a prayer, a confession, or a celebration, exploring
               the full arc of the believer&apos;s journey through healing,
               worship, grief, grace, and belonging.
             </p>
@@ -234,7 +234,7 @@ export default function BooksPage() {
           <motion.div variants={fadeUp} className="flex justify-center">
             <Image
               src="/devotional.png"
-              alt="Faith Focus Flow: 365 Day Devotional — book cover"
+              alt="Faith Focus Flow: 365 Day Devotional, book cover"
               width={240}
               height={360}
               className="rounded shadow-md"
@@ -253,7 +253,7 @@ export default function BooksPage() {
             <div className="w-10 h-0.5 bg-pink mb-6" />
             <p className="font-sans text-navy/70 leading-relaxed mb-8">
               A 365-day devotional designed to help you live aligned, grounded,
-              and whole — one intentional day at a time. Through scripture,
+              and whole, one intentional day at a time. Through scripture,
               reflection, and prayer, it invites you into a gentle rhythm of
               faith, clarity, restoration, and growth. A devotional journey of
               grace, growth, and becoming whole.
@@ -290,7 +290,7 @@ export default function BooksPage() {
           <motion.div variants={fadeUp} className="flex justify-center md:order-2">
             <Image
               src="/journal.png"
-              alt="Faith Focus Flow Journal — book cover"
+              alt="Faith Focus Flow Journal, book cover"
               width={240}
               height={360}
               className="rounded shadow-md"
@@ -308,8 +308,8 @@ export default function BooksPage() {
             </span>
             <div className="w-10 h-0.5 bg-pink mb-6" />
             <p className="font-sans text-navy/70 leading-relaxed mb-8">
-              A companion scripture journal to the Faith Focus Flow devotional
-              — space for reflection, prayer, and writing alongside your daily
+              A companion scripture journal to the Faith Focus Flow devotional,
+              space for reflection, prayer, and writing alongside your daily
               reading.
             </p>
 

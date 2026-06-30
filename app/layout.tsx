@@ -17,7 +17,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Tamara Wilder — Author",
+  title: "Tamara Wilder, Author",
   description:
     "Tamara Wilder is a faith-driven author writing on identity, healing, and restoration. Explore her books and poetry.",
 };

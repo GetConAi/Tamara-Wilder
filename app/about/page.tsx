@@ -63,7 +63,7 @@ export default function AboutPage() {
               God&apos;s ability to heal, restore, and transform.
             </p>
             <p className="font-sans text-navy/70 leading-relaxed mb-6">
-              Through her writing — both fiction and poetry — Tamara creates
+              Through her writing, both fiction and poetry, Tamara creates
               space for readers to encounter the living God in the ordinary
               moments of life: in the grief, the surrender, the quiet mornings,
               and the unexpected breakthroughs. Her voice is honest, warm, and

@@ -181,7 +181,7 @@ export default function Home() {
             A Word of Encouragement
           </p>
           <p className="font-serif text-2xl md:text-3xl italic text-navy leading-relaxed">
-            &ldquo;Healing isn&apos;t a destination — it&apos;s a daily
+            &ldquo;Healing isn&apos;t a destination, it&apos;s a daily
             becoming. One day, one prayer, one step of faith at a
             time.&rdquo;
           </p>
@@ -291,7 +291,7 @@ export default function Home() {
           </h2>
           <p className="text-navy/60 font-sans mb-8 leading-relaxed">
             Receive updates on new releases, behind-the-scenes reflections, and
-            encouragement delivered straight to your inbox — a little light
+            encouragement delivered straight to your inbox, a little light
             for the journey, every time we write.
           </p>
           <EmailSignup label="" placeholder="Enter your email address" />

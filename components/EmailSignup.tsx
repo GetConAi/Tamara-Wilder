@@ -10,7 +10,7 @@ interface EmailSignupProps {
 }
 
 export default function EmailSignup({
-  label = "Join the list — be the first to know about new releases, essays, and events.",
+  label = "Join the list. Be the first to know about new releases, essays, and events.",
   buttonText = "Subscribe",
   placeholder = "Your email address",
 }: EmailSignupProps) {

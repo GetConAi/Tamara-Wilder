@@ -72,7 +72,7 @@ export default function OrderPage() {
             Order the Workbook
           </h1>
           <p className="font-serif italic text-navy/60">
-            Shipped privately by Tamara — not sold through Amazon or other
+            Shipped privately by Tamara, not sold through Amazon or other
             retailers.
           </p>
         </motion.div>
@@ -90,7 +90,7 @@ export default function OrderPage() {
             <div className="flex justify-center md:justify-start mb-8">
               <Image
                 src="/workbook.png"
-                alt="Becoming: The Workbook — A Journey of Faith and Restoration — book cover"
+                alt="Becoming: The Workbook, A Journey of Faith and Restoration, book cover"
                 width={240}
                 height={360}
                 className="rounded shadow-md"
@@ -104,7 +104,7 @@ export default function OrderPage() {
               A Journey of Faith and Restoration
             </p>
             <p className="font-sans text-navy/70 leading-relaxed">
-              A companion workbook to the novel <em>Becoming</em> — guided
+              A companion workbook to the novel <em>Becoming</em>, guided
               reflection, scripture, and prompts to help readers walk through
               their own journey of faith, identity, and restoration. Fill out
               the form and Tamara will follow up directly about payment and
