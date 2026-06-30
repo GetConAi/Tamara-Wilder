@@ -24,7 +24,7 @@ export default function ContactPage() {
   return (
     <>
       {/* Page header */}
-      <section className="bg-cream py-16 px-6 text-center border-b border-navy/10">
+      <section className="bg-gradient-to-b from-pink/25 via-cream to-cream py-16 px-6 text-center border-b border-pink/30">
         <motion.div
           initial={{ opacity: 0, y: 16 }}
           animate={{ opacity: 1, y: 0 }}

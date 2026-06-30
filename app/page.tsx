@@ -32,8 +32,9 @@ function BookPreviewCard({
     <motion.div variants={fadeUp}>
       <Link
         href={href}
-        className="group block border border-navy/15 rounded-lg overflow-hidden hover:border-pink hover:shadow-[0_12px_30px_-12px_rgba(246,210,216,0.9)] transition-all duration-300"
+        className="group block bg-white border-2 border-pink/40 rounded-lg overflow-hidden hover:border-pink hover:shadow-[0_12px_30px_-12px_rgba(246,210,216,0.9)] transition-all duration-300"
       >
+        <div className="h-1.5 w-full bg-pink/60 group-hover:bg-pink transition-colors" />
         <div className="flex justify-center mt-6">
           <Image
             src={src}
@@ -47,7 +48,7 @@ function BookPreviewCard({
           <h3 className="font-serif text-lg font-bold text-navy mb-1">{title}</h3>
           <p className="text-sm text-navy/60 font-sans mb-4 italic">{tagline}</p>
           {comingSoon ? (
-            <span className="inline-block px-4 py-1.5 border border-navy/30 text-xs tracking-widest uppercase text-navy/60 rounded">
+            <span className="inline-block px-4 py-1.5 bg-pink/30 border border-pink text-xs tracking-widest uppercase text-navy/70 rounded">
               Coming Soon
             </span>
           ) : (
@@ -64,8 +65,8 @@ function BookPreviewCard({
 export default function Home() {
   return (
     <>
-      {/* Banner */}
-      <div className="relative w-full h-[38vh] min-h-[240px] max-h-[440px]">
+      {/* Hero with banner background */}
+      <section className="relative w-full min-h-[64vh] sm:min-h-[72vh] md:min-h-[85vh] flex items-center justify-center px-6 py-24 overflow-hidden">
         <Image
           src="/banner.png"
           alt="Tamara Wilder — Speaker, Coach, Teacher"
@@ -73,11 +74,8 @@ export default function Home() {
           priority
           className="object-cover"
         />
-      </div>
-
-      {/* Hero */}
-      <section className="relative bg-cream flex items-center justify-center px-6 py-16 md:py-20">
-        <div className="absolute inset-0 bg-gradient-to-b from-pink/15 via-white to-cream" />
+        <div className="absolute inset-0 bg-navy/70" />
+        <div className="absolute inset-0 bg-gradient-to-b from-navy/55 via-navy/65 to-navy/85" />
         <motion.div
           className="relative z-10 max-w-3xl mx-auto text-center"
           variants={stagger}
@@ -86,19 +84,19 @@ export default function Home() {
         >
           <motion.p
             variants={fadeUp}
-            className="text-xs tracking-[0.3em] uppercase text-navy/50 font-sans mb-6"
+            className="text-xs tracking-[0.3em] uppercase text-pink font-sans mb-6"
           >
             Faith · Identity · Healing · Restoration
           </motion.p>
           <motion.h1
             variants={fadeUp}
-            className="font-serif text-5xl md:text-7xl font-bold text-navy leading-tight mb-6"
+            className="font-serif text-5xl md:text-7xl font-bold text-white leading-tight mb-6"
           >
             Tamara Wilder
           </motion.h1>
           <motion.p
             variants={fadeUp}
-            className="font-serif text-xl md:text-2xl text-navy/70 italic mb-10 leading-relaxed"
+            className="font-serif text-xl md:text-2xl text-white/90 italic mb-10 leading-relaxed"
           >
             Writing the stories that faith writes on the heart — of restoration,
             identity, and becoming who God says you are.
@@ -106,13 +104,13 @@ export default function Home() {
           <motion.div variants={fadeUp} className="flex flex-wrap gap-4 justify-center">
             <Link
               href="/books"
-              className="px-8 py-3.5 bg-navy text-white text-sm tracking-widest uppercase font-sans rounded hover:bg-navy-light transition-colors"
+              className="px-8 py-3.5 bg-pink text-navy font-semibold text-sm tracking-widest uppercase font-sans rounded hover:bg-pink/80 transition-colors"
             >
               Explore the Books
             </Link>
             <Link
               href="/about"
-              className="px-8 py-3.5 border border-navy text-navy text-sm tracking-widest uppercase font-sans rounded hover:bg-pink/15 transition-colors"
+              className="px-8 py-3.5 border border-white text-white text-sm tracking-widest uppercase font-sans rounded hover:bg-white/10 transition-colors"
             >
               About Tamara
             </Link>
@@ -121,7 +119,7 @@ export default function Home() {
       </section>
 
       {/* Intro */}
-      <section className="py-20 px-6">
+      <section className="py-20 px-6 bg-pink/10">
         <motion.div
           className="max-w-2xl mx-auto text-center"
           initial={{ opacity: 0, y: 20 }}
@@ -137,12 +135,15 @@ export default function Home() {
             means to walk in obedience, discover your God-given identity, and
             trust the process of becoming.
           </p>
+          <p className="font-serif italic text-navy/60 mt-6">
+            Grace is already writing your next chapter.
+          </p>
           <div className="w-12 h-0.5 bg-pink mx-auto mt-8" />
         </motion.div>
       </section>
 
       {/* Inspirational pull-quote */}
-      <section className="py-16 px-6 bg-pink/15">
+      <section className="py-16 px-6 bg-pink/30">
         <motion.div
           className="max-w-3xl mx-auto text-center"
           initial={{ opacity: 0, y: 16 }}
@@ -150,6 +151,9 @@ export default function Home() {
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
+          <p className="text-xs tracking-[0.3em] uppercase text-navy/50 font-sans mb-5">
+            A Word of Encouragement
+          </p>
           <p className="font-serif text-2xl md:text-3xl italic text-navy leading-relaxed">
             &ldquo;Healing isn&apos;t a destination — it&apos;s a daily
             becoming. One day, one prayer, one step of faith at a
@@ -228,8 +232,23 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Uplifting tagline strip */}
+      <section className="py-14 px-6 bg-navy">
+        <motion.div
+          className="max-w-2xl mx-auto text-center"
+          initial={{ opacity: 0, y: 16 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+        >
+          <p className="font-serif text-xl md:text-2xl italic text-pink leading-relaxed">
+            You are not behind. You are exactly where grace is meeting you.
+          </p>
+        </motion.div>
+      </section>
+
       {/* Email CTA */}
-      <section className="py-20 px-6">
+      <section className="relative py-20 px-6 bg-pink/20">
         <motion.div
           className="max-w-xl mx-auto text-center"
           initial={{ opacity: 0, y: 20 }}
@@ -237,15 +256,17 @@ export default function Home() {
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
+          <div className="w-12 h-0.5 bg-pink mx-auto mb-6" />
           <p className="text-xs tracking-[0.25em] uppercase text-navy/50 font-sans mb-4">
             Stay Connected
           </p>
           <h2 className="font-serif text-3xl font-bold text-navy mb-4">
-            Join the Community
+            You&apos;re Invited to Keep Becoming
           </h2>
           <p className="text-navy/60 font-sans mb-8 leading-relaxed">
             Receive updates on new releases, behind-the-scenes reflections, and
-            encouragement delivered straight to your inbox.
+            encouragement delivered straight to your inbox — a little light
+            for the journey, every time we write.
           </p>
           <EmailSignup label="" placeholder="Enter your email address" />
         </motion.div>

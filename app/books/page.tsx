@@ -18,7 +18,7 @@ export default function BooksPage() {
   return (
     <>
       {/* Page header */}
-      <section className="bg-cream py-16 px-6 text-center border-b border-navy/10">
+      <section className="bg-gradient-to-b from-pink/25 via-cream to-cream py-16 px-6 text-center border-b border-pink/30">
         <motion.div
           initial={{ opacity: 0, y: 16 }}
           animate={{ opacity: 1, y: 0 }}
@@ -27,9 +27,12 @@ export default function BooksPage() {
           <p className="text-xs tracking-[0.3em] uppercase text-navy/50 font-sans mb-4">
             The Books
           </p>
-          <h1 className="font-serif text-4xl md:text-5xl font-bold text-navy">
+          <h1 className="font-serif text-4xl md:text-5xl font-bold text-navy mb-4">
             Written by Faith
           </h1>
+          <p className="font-serif italic text-navy/60">
+            Stories and tools for the journey of becoming whole.
+          </p>
         </motion.div>
       </section>
 
@@ -92,7 +95,7 @@ export default function BooksPage() {
       </div>
 
       {/* Becoming: The Workbook */}
-      <section className="py-20 px-6 bg-pink/5">
+      <section className="py-20 px-6 bg-pink/10">
         <motion.div
           className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center"
           initial="hidden"
@@ -130,7 +133,7 @@ export default function BooksPage() {
             </p>
             <a
               href="mailto:Tamara@tamarawilder.com?subject=Becoming%20Workbook%20Order&body=Hi%20Tamara%2C%20I'd%20like%20to%20order%20a%20copy%20of%20the%20Becoming%20Workbook."
-              className="inline-block px-8 py-3.5 bg-navy text-white text-sm tracking-widest uppercase font-sans rounded hover:bg-navy-light transition-colors"
+              className="inline-block px-8 py-3.5 bg-pink text-navy font-semibold text-sm tracking-widest uppercase font-sans rounded hover:bg-pink/80 transition-colors"
             >
               Order the Workbook
             </a>
@@ -170,7 +173,7 @@ export default function BooksPage() {
             <p className="font-serif text-lg italic text-navy/60 mb-2">
               From the Daughter of the King of Kings
             </p>
-            <span className="inline-block px-3 py-1 bg-gold/20 text-navy/80 text-xs tracking-widest uppercase font-sans rounded mb-6">
+            <span className="inline-block px-3 py-1 bg-pink/40 text-navy/80 text-xs tracking-widest uppercase font-sans rounded mb-6">
               Coming Soon
             </span>
             <div className="w-10 h-0.5 bg-pink mb-6" />
@@ -188,7 +191,7 @@ export default function BooksPage() {
             </p>
 
             {/* Email signup for launch notification */}
-            <div className="bg-cream border border-navy/10 rounded-lg p-6">
+            <div className="bg-pink/10 border border-pink/40 rounded-lg p-6">
               <p className="font-serif text-navy font-semibold mb-2">
                 Be the first to know when it launches
               </p>
@@ -202,12 +205,24 @@ export default function BooksPage() {
         </motion.div>
       </section>
 
-      <div className="max-w-5xl mx-auto px-6">
-        <div className="border-t border-pink/40" />
-      </div>
+      {/* Pull-quote */}
+      <section className="py-14 px-6 bg-pink/30">
+        <motion.div
+          className="max-w-2xl mx-auto text-center"
+          initial={{ opacity: 0, y: 16 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+        >
+          <p className="font-serif text-xl md:text-2xl italic text-navy leading-relaxed">
+            &ldquo;Every story of restoration starts with a single brave
+            step.&rdquo;
+          </p>
+        </motion.div>
+      </section>
 
       {/* Faith Focus Flow: 365 Day Devotional */}
-      <section className="py-20 px-6 bg-pink/5">
+      <section className="py-20 px-6 bg-pink/10">
         <motion.div
           className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center"
           initial="hidden"
@@ -231,7 +246,7 @@ export default function BooksPage() {
             <h2 className="font-serif text-3xl md:text-4xl font-bold text-navy mb-2">
               Faith Focus Flow: 365 Day Devotional
             </h2>
-            <span className="inline-block px-3 py-1 bg-gold/20 text-navy/80 text-xs tracking-widest uppercase font-sans rounded mb-6">
+            <span className="inline-block px-3 py-1 bg-pink/40 text-navy/80 text-xs tracking-widest uppercase font-sans rounded mb-6">
               Coming July 31, 2025
             </span>
             <div className="w-10 h-0.5 bg-pink mb-6" />
@@ -244,7 +259,7 @@ export default function BooksPage() {
             </p>
 
             {/* Email signup for launch notification */}
-            <div className="bg-cream border border-navy/10 rounded-lg p-6">
+            <div className="bg-pink/10 border border-pink/40 rounded-lg p-6">
               <p className="font-serif text-navy font-semibold mb-2">
                 Be the first to know when it launches
               </p>
@@ -287,7 +302,7 @@ export default function BooksPage() {
             <h2 className="font-serif text-3xl md:text-4xl font-bold text-navy mb-2">
               Faith Focus Flow Journal
             </h2>
-            <span className="inline-block px-3 py-1 bg-gold/20 text-navy/80 text-xs tracking-widest uppercase font-sans rounded mb-6">
+            <span className="inline-block px-3 py-1 bg-pink/40 text-navy/80 text-xs tracking-widest uppercase font-sans rounded mb-6">
               Coming July 31, 2025
             </span>
             <div className="w-10 h-0.5 bg-pink mb-6" />
@@ -298,7 +313,7 @@ export default function BooksPage() {
             </p>
 
             {/* Email signup for launch notification */}
-            <div className="bg-cream border border-navy/10 rounded-lg p-6">
+            <div className="bg-pink/10 border border-pink/40 rounded-lg p-6">
               <p className="font-serif text-navy font-semibold mb-2">
                 Be the first to know when it launches
               </p>

@@ -8,7 +8,7 @@ export default function AboutPage() {
   return (
     <>
       {/* Page header */}
-      <section className="bg-cream py-16 px-6 text-center border-b border-navy/10">
+      <section className="bg-gradient-to-b from-pink/25 via-cream to-cream py-16 px-6 text-center border-b border-pink/30">
         <motion.div
           initial={{ opacity: 0, y: 16 }}
           animate={{ opacity: 1, y: 0 }}
@@ -93,7 +93,7 @@ export default function AboutPage() {
       </section>
 
       {/* Values / themes banner */}
-      <section className="py-16 px-6 bg-cream">
+      <section className="py-16 px-6 bg-pink/15">
         <div className="max-w-5xl mx-auto">
           <motion.div
             className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center"
