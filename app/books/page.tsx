@@ -150,6 +150,116 @@ export default function BooksPage() {
           </motion.div>
         </motion.div>
       </section>
+
+      <div className="max-w-5xl mx-auto px-6">
+        <div className="border-t border-navy/10" />
+      </div>
+
+      {/* Faith Focus Flow: 365 Day Devotional */}
+      <section className="py-20 px-6">
+        <motion.div
+          className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center"
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: true }}
+          variants={stagger}
+        >
+          <motion.div variants={fadeUp} className="flex justify-center">
+            <Image
+              src="/devotional.png"
+              alt="Faith Focus Flow: 365 Day Devotional — book cover"
+              width={240}
+              height={360}
+              className="rounded shadow-md"
+            />
+          </motion.div>
+          <motion.div variants={fadeUp}>
+            <p className="text-xs tracking-[0.25em] uppercase text-navy/50 font-sans mb-3">
+              Devotional
+            </p>
+            <h2 className="font-serif text-3xl md:text-4xl font-bold text-navy mb-2">
+              Faith Focus Flow: 365 Day Devotional
+            </h2>
+            <span className="inline-block px-3 py-1 bg-gold/20 text-navy/80 text-xs tracking-widest uppercase font-sans rounded mb-6">
+              Coming July 31, 2025
+            </span>
+            <div className="w-10 h-0.5 bg-navy/20 mb-6" />
+            <p className="font-sans text-navy/70 leading-relaxed mb-8">
+              A 365-day devotional designed to help you live aligned, grounded,
+              and whole — one intentional day at a time. Through scripture,
+              reflection, and prayer, it invites you into a gentle rhythm of
+              faith, clarity, restoration, and growth. A devotional journey of
+              grace, growth, and becoming whole.
+            </p>
+
+            {/* Email signup for launch notification */}
+            <div className="bg-cream border border-navy/10 rounded-lg p-6">
+              <p className="font-serif text-navy font-semibold mb-2">
+                Be the first to know when it launches
+              </p>
+              <EmailSignup
+                label="Join the list and get notified when Faith Focus Flow: 365 Day Devotional is available."
+                buttonText="Notify Me"
+                placeholder="Your email address"
+              />
+            </div>
+          </motion.div>
+        </motion.div>
+      </section>
+
+      <div className="max-w-5xl mx-auto px-6">
+        <div className="border-t border-navy/10" />
+      </div>
+
+      {/* Faith Focus Flow Journal */}
+      <section className="py-20 px-6">
+        <motion.div
+          className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center"
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: true }}
+          variants={stagger}
+        >
+          <motion.div variants={fadeUp} className="flex justify-center md:order-2">
+            <Image
+              src="/journal.png"
+              alt="Faith Focus Flow Journal — book cover"
+              width={240}
+              height={360}
+              className="rounded shadow-md"
+            />
+          </motion.div>
+          <motion.div variants={fadeUp} className="md:order-1">
+            <p className="text-xs tracking-[0.25em] uppercase text-navy/50 font-sans mb-3">
+              Journal
+            </p>
+            <h2 className="font-serif text-3xl md:text-4xl font-bold text-navy mb-2">
+              Faith Focus Flow Journal
+            </h2>
+            <span className="inline-block px-3 py-1 bg-gold/20 text-navy/80 text-xs tracking-widest uppercase font-sans rounded mb-6">
+              Coming July 31, 2025
+            </span>
+            <div className="w-10 h-0.5 bg-navy/20 mb-6" />
+            <p className="font-sans text-navy/70 leading-relaxed mb-8">
+              A companion scripture journal to the Faith Focus Flow devotional
+              — space for reflection, prayer, and writing alongside your daily
+              reading.
+            </p>
+
+            {/* Email signup for launch notification */}
+            <div className="bg-cream border border-navy/10 rounded-lg p-6">
+              <p className="font-serif text-navy font-semibold mb-2">
+                Be the first to know when it launches
+              </p>
+              <EmailSignup
+                label="Join the list and get notified when Faith Focus Flow Journal is available."
+                buttonText="Notify Me"
+                placeholder="Your email address"
+              />
+            </div>
+          </motion.div>
+        </motion.div>
+      </section>
     </>
   );
 }

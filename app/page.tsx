@@ -148,7 +148,7 @@ export default function Home() {
             </h2>
           </motion.div>
           <motion.div
-            className="grid grid-cols-1 sm:grid-cols-2 gap-8 max-w-2xl mx-auto"
+            className="grid grid-cols-1 sm:grid-cols-2 gap-8 max-w-4xl mx-auto"
             variants={stagger}
             initial="hidden"
             whileInView="show"
@@ -165,6 +165,20 @@ export default function Home() {
               tagline="From the Daughter of the King of Kings"
               href="/books"
               src="/letters.png"
+              comingSoon
+            />
+            <BookPreviewCard
+              title="Faith Focus Flow: 365 Day Devotional"
+              tagline="Coming July 31, 2025"
+              href="/books"
+              src="/devotional.png"
+              comingSoon
+            />
+            <BookPreviewCard
+              title="Faith Focus Flow Journal"
+              tagline="Coming July 31, 2025"
+              href="/books"
+              src="/journal.png"
               comingSoon
             />
           </motion.div>
