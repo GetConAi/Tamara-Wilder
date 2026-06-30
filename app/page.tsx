@@ -75,51 +75,70 @@ export default function Home() {
         }}
       >
         <motion.div
-          className="relative z-10 max-w-2xl mx-auto text-center bg-white/70 backdrop-blur-sm rounded-3xl px-8 py-12 md:px-16 md:py-16 shadow-sm"
+          className="relative z-10 max-w-2xl mx-auto rounded-[28px] border border-pink/50 bg-gradient-to-br from-white via-white to-pink/20 shadow-[0_1px_2px_rgba(26,39,68,0.05),0_10px_28px_-10px_rgba(26,39,68,0.18),0_28px_60px_-28px_rgba(26,39,68,0.28)]"
           variants={stagger}
           initial="hidden"
           animate="show"
         >
-          <motion.p
-            variants={fadeUp}
-            className="text-xs tracking-[0.3em] uppercase text-navy/70 font-sans font-semibold mb-6 text-shadow-2xs"
-          >
-            Faith · Identity · Healing · Restoration
-          </motion.p>
-          <motion.h1
-            variants={fadeUp}
-            className="font-serif text-5xl md:text-7xl font-black text-navy leading-tight mb-4 text-shadow-sm"
-          >
-            Tamara Wilder
-          </motion.h1>
-          <motion.div variants={fadeUp} className="w-16 h-0.5 bg-pink mx-auto mb-4" />
-          <motion.p
-            variants={fadeUp}
-            className="text-sm md:text-base tracking-[0.3em] uppercase text-navy font-sans font-bold mb-8 text-shadow-2xs"
-          >
-            Speaker · Coach · Teacher
-          </motion.p>
-          <motion.p
-            variants={fadeUp}
-            className="font-serif text-xl md:text-2xl text-navy font-semibold italic mb-10 leading-relaxed text-shadow-2xs"
-          >
-            Writing the stories that faith writes on the heart. Stories of
-            restoration, identity, and becoming who God says you are.
-          </motion.p>
-          <motion.div variants={fadeUp} className="flex flex-wrap gap-4 justify-center">
-            <Link
-              href="/books"
-              className="px-8 py-3.5 bg-navy text-white text-sm tracking-widest uppercase font-sans rounded hover:bg-navy-light transition-colors"
+          <div className="m-3 rounded-[20px] border border-navy/10 text-center px-8 py-12 md:px-16 md:py-16">
+            <motion.p
+              variants={fadeUp}
+              className="text-xs tracking-[0.3em] uppercase text-navy/70 font-sans font-semibold mb-6 text-shadow-2xs"
             >
-              Explore the Books
-            </Link>
-            <Link
-              href="/about"
-              className="px-8 py-3.5 border border-navy text-navy text-sm tracking-widest uppercase font-sans rounded hover:bg-pink/30 transition-colors"
+              Faith · Identity · Healing · Restoration
+            </motion.p>
+            <motion.h1
+              variants={fadeUp}
+              className="font-serif text-5xl md:text-7xl font-black text-navy leading-tight mb-5 text-shadow-sm"
             >
-              About Tamara
-            </Link>
-          </motion.div>
+              Tamara Wilder
+            </motion.h1>
+            <motion.div
+              variants={fadeUp}
+              aria-hidden="true"
+              className="flex items-center justify-center gap-3 mb-5"
+            >
+              <span className="h-px w-10 bg-pink/70" />
+              <span className="block w-2 h-2 rotate-45 bg-pink" />
+              <span className="h-px w-10 bg-pink/70" />
+            </motion.div>
+            <motion.p
+              variants={fadeUp}
+              className="text-sm md:text-base tracking-[0.3em] uppercase text-navy font-sans font-bold mb-8 text-shadow-2xs"
+            >
+              Speaker · Coach · Teacher
+            </motion.p>
+            <motion.p
+              variants={fadeUp}
+              className="font-serif text-xl md:text-2xl text-navy font-semibold italic mb-10 leading-relaxed text-shadow-2xs"
+            >
+              Writing the stories that faith writes on the heart. Stories of
+              restoration, identity, and becoming who God says you are.
+            </motion.p>
+            <motion.div variants={fadeUp} className="flex flex-wrap gap-4 justify-center">
+              <Link
+                href="/books"
+                className="px-8 py-3.5 bg-navy text-white text-sm tracking-widest uppercase font-sans rounded hover:bg-navy-light transition-colors"
+              >
+                Explore the Books
+              </Link>
+              <Link
+                href="/about"
+                className="px-8 py-3.5 border border-navy text-navy text-sm tracking-widest uppercase font-sans rounded hover:bg-pink/30 transition-colors"
+              >
+                About Tamara
+              </Link>
+            </motion.div>
+            <motion.div
+              variants={fadeUp}
+              aria-hidden="true"
+              className="flex items-center justify-center gap-3 mt-10"
+            >
+              <span className="h-px w-8 bg-pink/40" />
+              <span className="block w-1.5 h-1.5 rotate-45 bg-pink/50" />
+              <span className="h-px w-8 bg-pink/40" />
+            </motion.div>
+          </div>
         </motion.div>
       </section>
 
