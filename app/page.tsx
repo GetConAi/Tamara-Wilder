@@ -75,33 +75,33 @@ export default function Home() {
         }}
       >
         <motion.div
-          className="relative z-10 max-w-2xl mx-auto text-center"
+          className="relative z-10 max-w-2xl mx-auto text-center bg-white/70 backdrop-blur-sm rounded-3xl px-8 py-12 md:px-16 md:py-16 shadow-sm"
           variants={stagger}
           initial="hidden"
           animate="show"
         >
           <motion.p
             variants={fadeUp}
-            className="text-xs tracking-[0.3em] uppercase text-navy/50 font-sans mb-6"
+            className="text-xs tracking-[0.3em] uppercase text-navy/70 font-sans font-semibold mb-6 text-shadow-2xs"
           >
             Faith · Identity · Healing · Restoration
           </motion.p>
           <motion.h1
             variants={fadeUp}
-            className="font-serif text-5xl md:text-7xl font-bold text-navy leading-tight mb-4"
+            className="font-serif text-5xl md:text-7xl font-black text-navy leading-tight mb-4 text-shadow-sm"
           >
             Tamara Wilder
           </motion.h1>
           <motion.div variants={fadeUp} className="w-16 h-0.5 bg-pink mx-auto mb-4" />
           <motion.p
             variants={fadeUp}
-            className="text-sm md:text-base tracking-[0.3em] uppercase text-navy/60 font-sans mb-8"
+            className="text-sm md:text-base tracking-[0.3em] uppercase text-navy font-sans font-bold mb-8 text-shadow-2xs"
           >
             Speaker · Coach · Teacher
           </motion.p>
           <motion.p
             variants={fadeUp}
-            className="font-serif text-xl md:text-2xl text-navy/70 italic mb-10 leading-relaxed"
+            className="font-serif text-xl md:text-2xl text-navy/85 font-medium italic mb-10 leading-relaxed"
           >
             Writing the stories that faith writes on the heart — of restoration,
             identity, and becoming who God says you are.
