@@ -1,0 +1,156 @@
+"use client";
+
+import { motion, type Variants } from "framer-motion";
+import EmailSignup from "@/components/EmailSignup";
+
+const fadeUp: Variants = {
+  hidden: { opacity: 0, y: 24 },
+  show: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } },
+};
+
+const stagger: Variants = {
+  hidden: {},
+  show: { transition: { staggerChildren: 0.15 } },
+};
+
+function CoverPlaceholder() {
+  return (
+    <div className="relative w-full max-w-[240px] mx-auto aspect-[2/3] bg-navy/5 border border-navy/10 rounded flex items-center justify-center shadow-md">
+      <div className="text-center px-6">
+        <div className="w-16 h-0.5 bg-navy/20 mx-auto mb-4" />
+        <p className="font-serif text-navy/30 text-sm italic leading-relaxed">
+          Cover Image
+        </p>
+        <div className="w-16 h-0.5 bg-navy/20 mx-auto mt-4" />
+      </div>
+    </div>
+  );
+}
+
+export default function BooksPage() {
+  return (
+    <>
+      {/* Page header */}
+      <section className="bg-cream py-16 px-6 text-center border-b border-navy/10">
+        <motion.div
+          initial={{ opacity: 0, y: 16 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+        >
+          <p className="text-xs tracking-[0.3em] uppercase text-navy/50 font-sans mb-4">
+            The Books
+          </p>
+          <h1 className="font-serif text-4xl md:text-5xl font-bold text-navy">
+            Written by Faith
+          </h1>
+        </motion.div>
+      </section>
+
+      {/* Becoming */}
+      <section className="py-20 px-6">
+        <motion.div
+          className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center"
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: true }}
+          variants={stagger}
+        >
+          <motion.div variants={fadeUp} className="flex justify-center">
+            <CoverPlaceholder />
+          </motion.div>
+          <motion.div variants={fadeUp}>
+            <p className="text-xs tracking-[0.25em] uppercase text-navy/50 font-sans mb-3">
+              Novel
+            </p>
+            <h2 className="font-serif text-3xl md:text-4xl font-bold text-navy mb-2">
+              Becoming
+            </h2>
+            <p className="font-serif text-lg italic text-navy/60 mb-6">
+              A Journey of Faith and Restoration
+            </p>
+            <div className="w-10 h-0.5 bg-navy/20 mb-6" />
+            <p className="font-sans text-navy/70 leading-relaxed mb-4">
+              <em>Becoming</em> is a faith-centered novel that follows one
+              woman&apos;s courageous journey through loss, surrender, and
+              unexpected grace. When everything she thought defined her is
+              stripped away, she discovers that obedience is the doorway to
+              restoration — and that the life God has planned is far greater
+              than the one she had mapped out.
+            </p>
+            <p className="font-sans text-navy/70 leading-relaxed mb-8">
+              Rooted in themes of identity, purpose, and the redemptive power
+              of faith, this novel is for anyone who has ever had to let go of
+              who they were in order to become who God created them to be.
+            </p>
+            <a
+              href="https://www.amazon.com/dp/B0GH9YD8G7?ref_=cm_sw_r_ffobk_cp_ud_dp_1B93KC3WS80BK1YXSGSA&bestFormat=true"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block px-8 py-3.5 bg-navy text-white text-sm tracking-widest uppercase font-sans rounded hover:bg-navy-light transition-colors"
+            >
+              Buy on Amazon
+            </a>
+          </motion.div>
+        </motion.div>
+      </section>
+
+      <div className="max-w-5xl mx-auto px-6">
+        <div className="border-t border-navy/10" />
+      </div>
+
+      {/* Letters to My Father */}
+      <section className="py-20 px-6">
+        <motion.div
+          className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center"
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: true }}
+          variants={stagger}
+        >
+          <motion.div variants={fadeUp} className="flex justify-center md:order-2">
+            <CoverPlaceholder />
+          </motion.div>
+          <motion.div variants={fadeUp} className="md:order-1">
+            <p className="text-xs tracking-[0.25em] uppercase text-navy/50 font-sans mb-3">
+              Poetry Collection
+            </p>
+            <h2 className="font-serif text-3xl md:text-4xl font-bold text-navy mb-2">
+              Letters to My Father
+            </h2>
+            <p className="font-serif text-lg italic text-navy/60 mb-2">
+              From the Daughter of the King of Kings
+            </p>
+            <span className="inline-block px-3 py-1 bg-gold/20 text-navy/80 text-xs tracking-widest uppercase font-sans rounded mb-6">
+              Coming Soon
+            </span>
+            <div className="w-10 h-0.5 bg-navy/20 mb-6" />
+            <p className="font-sans text-navy/70 leading-relaxed mb-4">
+              <em>Letters to My Father</em> is an intimate collection of poetry
+              written as correspondence from a daughter to her Heavenly Father.
+              Each poem is a prayer, a confession, or a celebration — exploring
+              the full arc of the believer&apos;s journey through healing,
+              worship, grief, grace, and belonging.
+            </p>
+            <p className="font-sans text-navy/70 leading-relaxed mb-8">
+              With themes of identity, restoration, and the tender mercy of God,
+              this collection speaks to the heart that longs to be known,
+              named, and loved by its Maker.
+            </p>
+
+            {/* Email signup for launch notification */}
+            <div className="bg-cream border border-navy/10 rounded-lg p-6">
+              <p className="font-serif text-navy font-semibold mb-2">
+                Be the first to know when it launches
+              </p>
+              <EmailSignup
+                label="Join the list and get notified when Letters to My Father is available."
+                buttonText="Notify Me"
+                placeholder="Your email address"
+              />
+            </div>
+          </motion.div>
+        </motion.div>
+      </section>
+    </>
+  );
+}
