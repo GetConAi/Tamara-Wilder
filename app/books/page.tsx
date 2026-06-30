@@ -18,7 +18,7 @@ export default function BooksPage() {
   return (
     <>
       {/* Page header */}
-      <section className="bg-gradient-to-b from-pink/25 via-cream to-cream py-16 px-6 text-center border-b border-pink/30">
+      <section className="bg-gradient-to-b from-pink/35 via-cream to-cream py-16 px-6 text-center border-b border-pink/40">
         <motion.div
           initial={{ opacity: 0, y: 16 }}
           animate={{ opacity: 1, y: 0 }}
@@ -91,11 +91,11 @@ export default function BooksPage() {
       </section>
 
       <div className="max-w-5xl mx-auto px-6">
-        <div className="border-t border-pink/40" />
+        <div className="border-t border-pink/50" />
       </div>
 
       {/* Becoming: The Workbook */}
-      <section className="py-20 px-6 bg-pink/10">
+      <section className="py-20 px-6 bg-pink/15">
         <motion.div
           className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center"
           initial="hidden"
@@ -122,7 +122,7 @@ export default function BooksPage() {
             <p className="font-serif text-lg italic text-navy/60 mb-2">
               A Journey of Faith and Restoration
             </p>
-            <span className="inline-block px-3 py-1 bg-pink/50 text-navy/80 text-xs tracking-widest uppercase font-sans rounded mb-6">
+            <span className="inline-block px-3 py-1 bg-pink/60 text-navy/80 text-xs tracking-widest uppercase font-sans rounded mb-6">
               Available Now
             </span>
             <div className="w-10 h-0.5 bg-pink mb-6" />
@@ -142,7 +142,7 @@ export default function BooksPage() {
       </section>
 
       <div className="max-w-5xl mx-auto px-6">
-        <div className="border-t border-pink/40" />
+        <div className="border-t border-pink/50" />
       </div>
 
       {/* Letters to My Father */}
@@ -173,7 +173,7 @@ export default function BooksPage() {
             <p className="font-serif text-lg italic text-navy/60 mb-2">
               From the Daughter of the King of Kings
             </p>
-            <span className="inline-block px-3 py-1 bg-pink/40 text-navy/80 text-xs tracking-widest uppercase font-sans rounded mb-6">
+            <span className="inline-block px-3 py-1 bg-pink/50 text-navy/80 text-xs tracking-widest uppercase font-sans rounded mb-6">
               Coming Soon
             </span>
             <div className="w-10 h-0.5 bg-pink mb-6" />
@@ -191,7 +191,7 @@ export default function BooksPage() {
             </p>
 
             {/* Email signup for launch notification */}
-            <div className="bg-pink/10 border border-pink/40 rounded-lg p-6">
+            <div className="bg-pink/15 border border-pink/50 rounded-lg p-6">
               <p className="font-serif text-navy font-semibold mb-2">
                 Be the first to know when it launches
               </p>
@@ -206,7 +206,7 @@ export default function BooksPage() {
       </section>
 
       {/* Pull-quote */}
-      <section className="py-14 px-6 bg-pink/30">
+      <section className="py-14 px-6 bg-pink/40">
         <motion.div
           className="max-w-2xl mx-auto text-center"
           initial={{ opacity: 0, y: 16 }}
@@ -222,7 +222,7 @@ export default function BooksPage() {
       </section>
 
       {/* Faith Focus Flow: 365 Day Devotional */}
-      <section className="py-20 px-6 bg-pink/10">
+      <section className="py-20 px-6 bg-pink/15">
         <motion.div
           className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center"
           initial="hidden"
@@ -246,7 +246,7 @@ export default function BooksPage() {
             <h2 className="font-serif text-3xl md:text-4xl font-bold text-navy mb-2">
               Faith Focus Flow: 365 Day Devotional
             </h2>
-            <span className="inline-block px-3 py-1 bg-pink/40 text-navy/80 text-xs tracking-widest uppercase font-sans rounded mb-6">
+            <span className="inline-block px-3 py-1 bg-pink/50 text-navy/80 text-xs tracking-widest uppercase font-sans rounded mb-6">
               Coming July 31, 2025
             </span>
             <div className="w-10 h-0.5 bg-pink mb-6" />
@@ -259,7 +259,7 @@ export default function BooksPage() {
             </p>
 
             {/* Email signup for launch notification */}
-            <div className="bg-pink/10 border border-pink/40 rounded-lg p-6">
+            <div className="bg-pink/15 border border-pink/50 rounded-lg p-6">
               <p className="font-serif text-navy font-semibold mb-2">
                 Be the first to know when it launches
               </p>
@@ -274,7 +274,7 @@ export default function BooksPage() {
       </section>
 
       <div className="max-w-5xl mx-auto px-6">
-        <div className="border-t border-pink/40" />
+        <div className="border-t border-pink/50" />
       </div>
 
       {/* Faith Focus Flow Journal */}
@@ -302,7 +302,7 @@ export default function BooksPage() {
             <h2 className="font-serif text-3xl md:text-4xl font-bold text-navy mb-2">
               Faith Focus Flow Journal
             </h2>
-            <span className="inline-block px-3 py-1 bg-pink/40 text-navy/80 text-xs tracking-widest uppercase font-sans rounded mb-6">
+            <span className="inline-block px-3 py-1 bg-pink/50 text-navy/80 text-xs tracking-widest uppercase font-sans rounded mb-6">
               Coming July 31, 2025
             </span>
             <div className="w-10 h-0.5 bg-pink mb-6" />
@@ -313,7 +313,7 @@ export default function BooksPage() {
             </p>
 
             {/* Email signup for launch notification */}
-            <div className="bg-pink/10 border border-pink/40 rounded-lg p-6">
+            <div className="bg-pink/15 border border-pink/50 rounded-lg p-6">
               <p className="font-serif text-navy font-semibold mb-2">
                 Be the first to know when it launches
               </p>

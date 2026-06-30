@@ -8,7 +8,7 @@ export default function AboutPage() {
   return (
     <>
       {/* Page header */}
-      <section className="bg-gradient-to-b from-pink/25 via-cream to-cream py-16 px-6 text-center border-b border-pink/30">
+      <section className="bg-gradient-to-b from-pink/35 via-cream to-cream py-16 px-6 text-center border-b border-pink/40">
         <motion.div
           initial={{ opacity: 0, y: 16 }}
           animate={{ opacity: 1, y: 0 }}
@@ -83,7 +83,7 @@ export default function AboutPage() {
               </Link>
               <Link
                 href="/contact"
-                className="px-6 py-3 border border-navy text-navy text-sm tracking-widest uppercase font-sans rounded hover:bg-pink/15 transition-colors"
+                className="px-6 py-3 border border-navy text-navy text-sm tracking-widest uppercase font-sans rounded hover:bg-pink/20 transition-colors"
               >
                 Get in Touch
               </Link>
@@ -93,7 +93,7 @@ export default function AboutPage() {
       </section>
 
       {/* Values / themes banner */}
-      <section className="py-16 px-6 bg-pink/15">
+      <section className="py-16 px-6 bg-pink/20">
         <div className="max-w-5xl mx-auto">
           <motion.div
             className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center"

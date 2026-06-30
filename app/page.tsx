@@ -32,9 +32,9 @@ function BookPreviewCard({
     <motion.div variants={fadeUp}>
       <Link
         href={href}
-        className="group block bg-white border-2 border-pink/40 rounded-lg overflow-hidden hover:border-pink hover:shadow-[0_12px_30px_-12px_rgba(246,210,216,0.9)] transition-all duration-300"
+        className="group block bg-white border-2 border-pink/50 rounded-lg overflow-hidden hover:border-pink hover:shadow-[0_12px_30px_-12px_rgba(246,210,216,0.9)] transition-all duration-300"
       >
-        <div className="h-1.5 w-full bg-pink/60 group-hover:bg-pink transition-colors" />
+        <div className="h-1.5 w-full bg-pink/70 group-hover:bg-pink transition-colors" />
         <div className="flex justify-center mt-6">
           <Image
             src={src}
@@ -48,7 +48,7 @@ function BookPreviewCard({
           <h3 className="font-serif text-lg font-bold text-navy mb-1">{title}</h3>
           <p className="text-sm text-navy/60 font-sans mb-4 italic">{tagline}</p>
           {comingSoon ? (
-            <span className="inline-block px-4 py-1.5 bg-pink/30 border border-pink text-xs tracking-widest uppercase text-navy/70 rounded">
+            <span className="inline-block px-4 py-1.5 bg-pink/40 border border-pink text-xs tracking-widest uppercase text-navy/70 rounded">
               Coming Soon
             </span>
           ) : (
@@ -74,10 +74,9 @@ export default function Home() {
           priority
           className="object-cover"
         />
-        <div className="absolute inset-0 bg-navy/70" />
-        <div className="absolute inset-0 bg-gradient-to-b from-navy/55 via-navy/65 to-navy/85" />
+        <div className="absolute inset-0 bg-gradient-to-b from-navy/20 via-navy/10 to-navy/25" />
         <motion.div
-          className="relative z-10 max-w-3xl mx-auto text-center"
+          className="relative z-10 max-w-2xl mx-auto text-center bg-navy/55 backdrop-blur-md rounded-3xl px-8 py-12 md:px-16 md:py-16 shadow-2xl"
           variants={stagger}
           initial="hidden"
           animate="show"
@@ -96,7 +95,7 @@ export default function Home() {
           </motion.h1>
           <motion.p
             variants={fadeUp}
-            className="font-serif text-xl md:text-2xl text-white/90 italic mb-10 leading-relaxed"
+            className="font-serif text-xl md:text-2xl text-white/95 italic mb-10 leading-relaxed"
           >
             Writing the stories that faith writes on the heart — of restoration,
             identity, and becoming who God says you are.
@@ -119,7 +118,7 @@ export default function Home() {
       </section>
 
       {/* Intro */}
-      <section className="py-20 px-6 bg-pink/10">
+      <section className="py-20 px-6 bg-pink/15">
         <motion.div
           className="max-w-2xl mx-auto text-center"
           initial={{ opacity: 0, y: 20 }}
@@ -143,7 +142,7 @@ export default function Home() {
       </section>
 
       {/* Inspirational pull-quote */}
-      <section className="py-16 px-6 bg-pink/30">
+      <section className="py-16 px-6 bg-pink/40">
         <motion.div
           className="max-w-3xl mx-auto text-center"
           initial={{ opacity: 0, y: 16 }}
@@ -248,7 +247,7 @@ export default function Home() {
       </section>
 
       {/* Email CTA */}
-      <section className="relative py-20 px-6 bg-pink/20">
+      <section className="relative py-20 px-6 bg-pink/30">
         <motion.div
           className="max-w-xl mx-auto text-center"
           initial={{ opacity: 0, y: 20 }}
