@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { motion, type Variants } from "framer-motion";
 import EmailSignup from "@/components/EmailSignup";
 
@@ -18,11 +19,13 @@ function BookPreviewCard({
   title,
   tagline,
   href,
+  src,
   comingSoon,
 }: {
   title: string;
   tagline: string;
   href: string;
+  src: string;
   comingSoon?: boolean;
 }) {
   return (
@@ -31,12 +34,14 @@ function BookPreviewCard({
         href={href}
         className="group block border border-navy/15 rounded-lg overflow-hidden hover:shadow-lg transition-shadow duration-300"
       >
-        <div className="bg-navy/5 flex items-center justify-center aspect-[2/3] w-full max-w-[200px] mx-auto mt-6">
-          <div className="text-center px-4">
-            <div className="w-16 h-0.5 bg-navy/20 mx-auto mb-3" />
-            <p className="font-serif text-navy/40 text-xs italic">Cover Image</p>
-            <div className="w-16 h-0.5 bg-navy/20 mx-auto mt-3" />
-          </div>
+        <div className="flex justify-center mt-6">
+          <Image
+            src={src}
+            alt={`${title} book cover`}
+            width={200}
+            height={300}
+            className="rounded shadow-sm"
+          />
         </div>
         <div className="p-6 text-center">
           <h3 className="font-serif text-lg font-bold text-navy mb-1">{title}</h3>
@@ -153,11 +158,13 @@ export default function Home() {
               title="Becoming"
               tagline="A Journey of Faith and Restoration"
               href="/books"
+              src="/becoming.png"
             />
             <BookPreviewCard
               title="Letters to My Father"
               tagline="From the Daughter of the King of Kings"
               href="/books"
+              src="/letters.png"
               comingSoon
             />
           </motion.div>
