@@ -33,7 +33,7 @@ export default function RootLayout({
       className={`${playfair.variable} ${inter.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">
-        <h1>Page Title</h1>
+        <h1 className="text-3xl font-bold text-gray-900">Page Title</h1>
         <Navbar />
         <main className="flex-1">{children}</main>
         <Footer />
