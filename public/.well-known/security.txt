@@ -1,0 +1,4 @@
+Contact: mailto:security@example.com
+```
+
+Please note that the file should include additional details such as responsible disclosure policy, acknowledgement, and other relevant information for a complete security.txt file. The example above only includes the contact information as per your instruction.
