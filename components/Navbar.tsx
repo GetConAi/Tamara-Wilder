@@ -35,7 +35,7 @@ export default function Navbar() {
                 className={`text-sm tracking-widest uppercase font-sans transition-colors ${
                   pathname === link.href
                     ? "text-navy font-semibold border-b-2 border-navy pb-0.5"
-                    : "text-navy/60 hover:text-navy"
+                    : "text-navy/70 hover:text-navy"
                 }`}
               >
                 {link.label}
@@ -81,7 +81,7 @@ export default function Navbar() {
                     className={`block text-sm tracking-widest uppercase font-sans transition-colors ${
                       pathname === link.href
                         ? "text-navy font-semibold"
-                        : "text-navy/60 hover:text-navy"
+                        : "text-navy/70 hover:text-navy"
                     }`}
                   >
                     {link.label}

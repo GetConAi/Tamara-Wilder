@@ -30,7 +30,7 @@ export default function ContactPage() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
         >
-          <p className="text-xs tracking-[0.3em] uppercase text-navy/50 font-sans mb-4">
+          <p className="text-xs tracking-[0.3em] uppercase text-navy/70 font-sans mb-4">
             Contact
           </p>
           <h1 className="font-serif text-4xl md:text-5xl font-bold text-navy">
@@ -60,7 +60,7 @@ export default function ContactPage() {
 
             <div className="space-y-6">
               <div>
-                <p className="text-xs tracking-[0.2em] uppercase text-navy/40 font-sans mb-1">
+                <p className="text-xs tracking-[0.2em] uppercase text-navy/70 font-sans mb-1">
                   Social
                 </p>
                 <ul className="space-y-1">
@@ -80,7 +80,7 @@ export default function ContactPage() {
                 </ul>
               </div>
               <div>
-                <p className="text-xs tracking-[0.2em] uppercase text-navy/40 font-sans mb-1">
+                <p className="text-xs tracking-[0.2em] uppercase text-navy/70 font-sans mb-1">
                   For Inquiries
                 </p>
                 <p className="font-sans text-navy/70">
@@ -107,7 +107,7 @@ export default function ContactPage() {
                 <h3 className="font-serif text-2xl font-bold text-navy mb-3">
                   Message Received
                 </h3>
-                <p className="font-sans text-navy/60">
+                <p className="font-sans text-navy/70">
                   Thank you for reaching out. Tamara will be in touch soon.
                 </p>
               </motion.div>
@@ -116,7 +116,7 @@ export default function ContactPage() {
                 <div>
                   <label
                     htmlFor="name"
-                    className="block text-xs tracking-widest uppercase text-navy/50 font-sans mb-1.5"
+                    className="block text-xs tracking-widest uppercase text-navy/70 font-sans mb-1.5"
                   >
                     Name
                   </label>
@@ -128,13 +128,13 @@ export default function ContactPage() {
                     value={form.name}
                     onChange={handleChange}
                     placeholder="Your full name"
-                    className="w-full px-4 py-3 border border-navy/20 rounded text-sm font-sans text-navy placeholder-navy/30 focus:outline-none focus:border-navy transition-colors"
+                    className="w-full px-4 py-3 border border-navy/20 rounded text-sm font-sans text-navy placeholder-navy/70 focus:outline-none focus:border-navy transition-colors"
                   />
                 </div>
                 <div>
                   <label
                     htmlFor="email"
-                    className="block text-xs tracking-widest uppercase text-navy/50 font-sans mb-1.5"
+                    className="block text-xs tracking-widest uppercase text-navy/70 font-sans mb-1.5"
                   >
                     Email
                   </label>
@@ -146,13 +146,13 @@ export default function ContactPage() {
                     value={form.email}
                     onChange={handleChange}
                     placeholder="your@email.com"
-                    className="w-full px-4 py-3 border border-navy/20 rounded text-sm font-sans text-navy placeholder-navy/30 focus:outline-none focus:border-navy transition-colors"
+                    className="w-full px-4 py-3 border border-navy/20 rounded text-sm font-sans text-navy placeholder-navy/70 focus:outline-none focus:border-navy transition-colors"
                   />
                 </div>
                 <div>
                   <label
                     htmlFor="message"
-                    className="block text-xs tracking-widest uppercase text-navy/50 font-sans mb-1.5"
+                    className="block text-xs tracking-widest uppercase text-navy/70 font-sans mb-1.5"
                   >
                     Message
                   </label>
@@ -164,7 +164,7 @@ export default function ContactPage() {
                     value={form.message}
                     onChange={handleChange}
                     placeholder="Your message..."
-                    className="w-full px-4 py-3 border border-navy/20 rounded text-sm font-sans text-navy placeholder-navy/30 focus:outline-none focus:border-navy transition-colors resize-none"
+                    className="w-full px-4 py-3 border border-navy/20 rounded text-sm font-sans text-navy placeholder-navy/70 focus:outline-none focus:border-navy transition-colors resize-none"
                   />
                 </div>
                 <button

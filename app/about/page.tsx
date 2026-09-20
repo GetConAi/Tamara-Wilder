@@ -14,7 +14,7 @@ export default function AboutPage() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
         >
-          <p className="text-xs tracking-[0.3em] uppercase text-navy/50 font-sans mb-4">
+          <p className="text-xs tracking-[0.3em] uppercase text-navy/70 font-sans mb-4">
             About
           </p>
           <h1 className="font-serif text-4xl md:text-5xl font-bold text-navy">

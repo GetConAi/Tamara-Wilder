@@ -65,13 +65,13 @@ export default function OrderPage() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
         >
-          <p className="text-xs tracking-[0.3em] uppercase text-navy/50 font-sans mb-4">
+          <p className="text-xs tracking-[0.3em] uppercase text-navy/70 font-sans mb-4">
             Becoming: The Workbook
           </p>
           <h1 className="font-serif text-4xl md:text-5xl font-bold text-navy mb-4">
             Order the Workbook
           </h1>
-          <p className="font-serif italic text-navy/60">
+          <p className="font-serif italic text-navy/70">
             Shipped privately by Tamara, not sold through Amazon or other
             retailers.
           </p>
@@ -100,7 +100,7 @@ export default function OrderPage() {
             <h2 className="font-serif text-2xl font-bold text-navy mb-2">
               Becoming: The Workbook
             </h2>
-            <p className="font-serif italic text-navy/60 mb-6">
+            <p className="font-serif italic text-navy/70 mb-6">
               A Journey of Faith and Restoration
             </p>
             <p className="font-sans text-navy/70 leading-relaxed">
@@ -129,7 +129,7 @@ export default function OrderPage() {
                 <h3 className="font-serif text-2xl font-bold text-navy mb-3">
                   Order Received
                 </h3>
-                <p className="font-sans text-navy/60">
+                <p className="font-sans text-navy/70">
                   Thank you! Your order has been received. Tamara will be in
                   touch soon about payment and shipping.
                 </p>
@@ -139,7 +139,7 @@ export default function OrderPage() {
                 <div>
                   <label
                     htmlFor="name"
-                    className="block text-xs tracking-widest uppercase text-navy/50 font-sans mb-1.5"
+                    className="block text-xs tracking-widest uppercase text-navy/70 font-sans mb-1.5"
                   >
                     Name
                   </label>
@@ -151,13 +151,13 @@ export default function OrderPage() {
                     value={form.name}
                     onChange={handleChange}
                     placeholder="Your full name"
-                    className="w-full px-4 py-3 border border-navy/20 rounded text-sm font-sans text-navy placeholder-navy/30 focus:outline-none focus:border-navy transition-colors"
+                    className="w-full px-4 py-3 border border-navy/20 rounded text-sm font-sans text-navy placeholder-navy/70 focus:outline-none focus:border-navy transition-colors"
                   />
                 </div>
                 <div>
                   <label
                     htmlFor="email"
-                    className="block text-xs tracking-widest uppercase text-navy/50 font-sans mb-1.5"
+                    className="block text-xs tracking-widest uppercase text-navy/70 font-sans mb-1.5"
                   >
                     Email
                   </label>
@@ -169,13 +169,13 @@ export default function OrderPage() {
                     value={form.email}
                     onChange={handleChange}
                     placeholder="your@email.com"
-                    className="w-full px-4 py-3 border border-navy/20 rounded text-sm font-sans text-navy placeholder-navy/30 focus:outline-none focus:border-navy transition-colors"
+                    className="w-full px-4 py-3 border border-navy/20 rounded text-sm font-sans text-navy placeholder-navy/70 focus:outline-none focus:border-navy transition-colors"
                   />
                 </div>
                 <div>
                   <label
                     htmlFor="address"
-                    className="block text-xs tracking-widest uppercase text-navy/50 font-sans mb-1.5"
+                    className="block text-xs tracking-widest uppercase text-navy/70 font-sans mb-1.5"
                   >
                     Shipping Address
                   </label>
@@ -187,13 +187,13 @@ export default function OrderPage() {
                     value={form.address}
                     onChange={handleChange}
                     placeholder="Street address, city, state, ZIP"
-                    className="w-full px-4 py-3 border border-navy/20 rounded text-sm font-sans text-navy placeholder-navy/30 focus:outline-none focus:border-navy transition-colors resize-none"
+                    className="w-full px-4 py-3 border border-navy/20 rounded text-sm font-sans text-navy placeholder-navy/70 focus:outline-none focus:border-navy transition-colors resize-none"
                   />
                 </div>
                 <div>
                   <label
                     htmlFor="quantity"
-                    className="block text-xs tracking-widest uppercase text-navy/50 font-sans mb-1.5"
+                    className="block text-xs tracking-widest uppercase text-navy/70 font-sans mb-1.5"
                   >
                     Quantity
                   </label>
@@ -205,15 +205,15 @@ export default function OrderPage() {
                     required
                     value={form.quantity}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 border border-navy/20 rounded text-sm font-sans text-navy placeholder-navy/30 focus:outline-none focus:border-navy transition-colors"
+                    className="w-full px-4 py-3 border border-navy/20 rounded text-sm font-sans text-navy placeholder-navy/70 focus:outline-none focus:border-navy transition-colors"
                   />
                 </div>
                 <div>
                   <label
                     htmlFor="notes"
-                    className="block text-xs tracking-widest uppercase text-navy/50 font-sans mb-1.5"
+                    className="block text-xs tracking-widest uppercase text-navy/70 font-sans mb-1.5"
                   >
-                    Notes <span className="normal-case text-navy/30">(optional)</span>
+                    Notes <span className="normal-case text-navy/70">(optional)</span>
                   </label>
                   <textarea
                     id="notes"
@@ -222,7 +222,7 @@ export default function OrderPage() {
                     value={form.notes}
                     onChange={handleChange}
                     placeholder="Anything else Tamara should know..."
-                    className="w-full px-4 py-3 border border-navy/20 rounded text-sm font-sans text-navy placeholder-navy/30 focus:outline-none focus:border-navy transition-colors resize-none"
+                    className="w-full px-4 py-3 border border-navy/20 rounded text-sm font-sans text-navy placeholder-navy/70 focus:outline-none focus:border-navy transition-colors resize-none"
                   />
                 </div>
 

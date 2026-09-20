@@ -25,13 +25,13 @@ export default function BooksPage() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
         >
-          <p className="text-xs tracking-[0.3em] uppercase text-navy/50 font-sans mb-4">
+          <p className="text-xs tracking-[0.3em] uppercase text-navy/70 font-sans mb-4">
             The Books
           </p>
           <h1 className="font-serif text-4xl md:text-5xl font-bold text-navy mb-4">
             Written by Faith
           </h1>
-          <p className="font-serif italic text-navy/60">
+          <p className="font-serif italic text-navy/70">
             Stories and tools for the journey of becoming whole.
           </p>
         </motion.div>
@@ -56,13 +56,13 @@ export default function BooksPage() {
             />
           </motion.div>
           <motion.div variants={fadeUp}>
-            <p className="text-xs tracking-[0.25em] uppercase text-navy/50 font-sans mb-3">
+            <p className="text-xs tracking-[0.25em] uppercase text-navy/70 font-sans mb-3">
               Novel
             </p>
             <h2 className="font-serif text-3xl md:text-4xl font-bold text-navy mb-2">
               Becoming
             </h2>
-            <p className="font-serif text-lg italic text-navy/60 mb-6">
+            <p className="font-serif text-lg italic text-navy/70 mb-6">
               A Journey of Faith and Restoration
             </p>
             <div className="w-10 h-0.5 bg-pink mb-6" />
@@ -114,13 +114,13 @@ export default function BooksPage() {
             />
           </motion.div>
           <motion.div variants={fadeUp} className="md:order-1">
-            <p className="text-xs tracking-[0.25em] uppercase text-navy/50 font-sans mb-3">
+            <p className="text-xs tracking-[0.25em] uppercase text-navy/70 font-sans mb-3">
               Companion Workbook
             </p>
             <h2 className="font-serif text-3xl md:text-4xl font-bold text-navy mb-2">
               Becoming: The Workbook
             </h2>
-            <p className="font-serif text-lg italic text-navy/60 mb-2">
+            <p className="font-serif text-lg italic text-navy/70 mb-2">
               A Journey of Faith and Restoration
             </p>
             <span className="inline-block px-3 py-1 bg-pink/60 text-navy/80 text-xs tracking-widest uppercase font-sans rounded mb-6">
@@ -165,13 +165,13 @@ export default function BooksPage() {
             />
           </motion.div>
           <motion.div variants={fadeUp} className="md:order-1">
-            <p className="text-xs tracking-[0.25em] uppercase text-navy/50 font-sans mb-3">
+            <p className="text-xs tracking-[0.25em] uppercase text-navy/70 font-sans mb-3">
               Poetry Collection
             </p>
             <h2 className="font-serif text-3xl md:text-4xl font-bold text-navy mb-2">
               Letters to My Father
             </h2>
-            <p className="font-serif text-lg italic text-navy/60 mb-2">
+            <p className="font-serif text-lg italic text-navy/70 mb-2">
               From the Daughter of the King of Kings
             </p>
             <span className="inline-block px-3 py-1 bg-pink/50 text-navy/80 text-xs tracking-widest uppercase font-sans rounded mb-6">
@@ -241,7 +241,7 @@ export default function BooksPage() {
             />
           </motion.div>
           <motion.div variants={fadeUp}>
-            <p className="text-xs tracking-[0.25em] uppercase text-navy/50 font-sans mb-3">
+            <p className="text-xs tracking-[0.25em] uppercase text-navy/70 font-sans mb-3">
               Devotional
             </p>
             <h2 className="font-serif text-3xl md:text-4xl font-bold text-navy mb-2">
@@ -297,7 +297,7 @@ export default function BooksPage() {
             />
           </motion.div>
           <motion.div variants={fadeUp} className="md:order-1">
-            <p className="text-xs tracking-[0.25em] uppercase text-navy/50 font-sans mb-3">
+            <p className="text-xs tracking-[0.25em] uppercase text-navy/70 font-sans mb-3">
               Journal
             </p>
             <h2 className="font-serif text-3xl md:text-4xl font-bold text-navy mb-2">

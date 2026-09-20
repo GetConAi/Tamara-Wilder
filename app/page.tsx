@@ -46,7 +46,7 @@ function BookPreviewCard({
         </div>
         <div className="p-6 text-center">
           <h3 className="font-serif text-lg font-bold text-navy mb-1">{title}</h3>
-          <p className="text-sm text-navy/60 font-sans mb-4 italic">{tagline}</p>
+          <p className="text-sm text-navy/70 font-sans mb-4 italic">{tagline}</p>
           {comingSoon ? (
             <span className="inline-block px-4 py-1.5 bg-pink/40 border border-pink text-xs tracking-widest uppercase text-navy/70 rounded">
               Coming Soon
@@ -161,7 +161,7 @@ export default function Home() {
             means to walk in obedience, discover your God-given identity, and
             trust the process of becoming.
           </p>
-          <p className="font-serif italic text-navy/60 mt-6">
+          <p className="font-serif italic text-navy/70 mt-6">
             Grace is already writing your next chapter.
           </p>
           <div className="w-12 h-0.5 bg-pink mx-auto mt-8" />
@@ -177,7 +177,7 @@ export default function Home() {
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          <p className="text-xs tracking-[0.3em] uppercase text-navy/50 font-sans mb-5">
+          <p className="text-xs tracking-[0.3em] uppercase text-navy/70 font-sans mb-5">
             A Word of Encouragement
           </p>
           <p className="font-serif text-2xl md:text-3xl italic text-navy leading-relaxed">
@@ -199,7 +199,7 @@ export default function Home() {
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
           >
-            <p className="text-xs tracking-[0.25em] uppercase text-navy/50 font-sans mb-3">
+            <p className="text-xs tracking-[0.25em] uppercase text-navy/70 font-sans mb-3">
               The Books
             </p>
             <h2 className="font-serif text-3xl md:text-4xl font-bold text-navy">
@@ -250,7 +250,7 @@ export default function Home() {
           <div className="text-center mt-10">
             <Link
               href="/books"
-              className="text-sm tracking-widest uppercase text-navy/60 hover:text-navy font-sans underline underline-offset-4 transition-colors"
+              className="text-sm tracking-widest uppercase text-navy/70 hover:text-navy font-sans underline underline-offset-4 transition-colors"
             >
               View all books
             </Link>
@@ -283,13 +283,13 @@ export default function Home() {
           transition={{ duration: 0.6 }}
         >
           <div className="w-12 h-0.5 bg-pink mx-auto mb-6" />
-          <p className="text-xs tracking-[0.25em] uppercase text-navy/50 font-sans mb-4">
+          <p className="text-xs tracking-[0.25em] uppercase text-navy/70 font-sans mb-4">
             Stay Connected
           </p>
           <h2 className="font-serif text-3xl font-bold text-navy mb-4">
             You&apos;re Invited to Keep Becoming
           </h2>
-          <p className="text-navy/60 font-sans mb-8 leading-relaxed">
+          <p className="text-navy/70 font-sans mb-8 leading-relaxed">
             Receive updates on new releases, behind-the-scenes reflections, and
             encouragement delivered straight to your inbox, a little light
             for the journey, every time we write.

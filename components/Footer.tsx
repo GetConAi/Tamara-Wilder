@@ -7,6 +7,11 @@ const navLinks = [
   { href: "/contact", label: "Contact" },
 ];
 
+const legalLinks = [
+  { href: "/privacy-policy.html", label: "Privacy Policy" },
+  { href: "/terms-of-service.html", label: "Terms of Service" },
+];
+
 export default function Footer() {
   return (
     <footer className="bg-navy text-white py-12 mt-auto border-t-4 border-pink">
@@ -20,7 +25,7 @@ export default function Footer() {
           </div>
 
           <div>
-            <p className="text-xs tracking-widest uppercase text-white/40 mb-3">
+            <p className="text-xs tracking-widest uppercase text-white/60 mb-3">
               Pages
             </p>
             <ul className="flex flex-col gap-2">
@@ -38,7 +43,7 @@ export default function Footer() {
           </div>
 
           <div>
-            <p className="text-xs tracking-widest uppercase text-white/40 mb-3">
+            <p className="text-xs tracking-widest uppercase text-white/60 mb-3">
               Connect
             </p>
             <ul className="flex flex-col gap-2">
@@ -60,8 +65,22 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="border-t border-white/10 mt-10 pt-6 text-center text-white/40 text-xs">
-          &copy; {new Date().getFullYear()} Tamara Wilder. All rights reserved.
+        <div className="border-t border-white/10 mt-10 pt-6 flex flex-col items-center gap-3 text-center text-white/60 text-xs">
+          <ul className="flex flex-wrap justify-center gap-x-6 gap-y-2">
+            {legalLinks.map((link) => (
+              <li key={link.href}>
+                <a
+                  href={link.href}
+                  className="text-white/70 hover:text-white underline underline-offset-2 transition-colors"
+                >
+                  {link.label}
+                </a>
+              </li>
+            ))}
+          </ul>
+          <p>
+            &copy; {new Date().getFullYear()} Tamara Wilder. All rights reserved.
+          </p>
         </div>
       </div>
     </footer>
