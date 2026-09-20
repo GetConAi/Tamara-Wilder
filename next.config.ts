@@ -2,9 +2,11 @@ import type { NextConfig } from "next";
 
 const isDev = process.env.NODE_ENV !== "production";
 
-// Report-only for now so nothing on the site breaks. Watch the browser console
-// for "[Report Only]" violations, then tighten this and switch the header key
-// below to "Content-Security-Policy" to enforce it.
+// Enforced. The policy is deliberately permissive (it allows inline scripts and
+// styles, which Next.js and framer-motion need) while blocking third-party
+// scripts, frames, and plugins. If something legitimate is ever blocked, the
+// browser console names the rule; add that source here. To go back to
+// warn-only, change the header key below to "Content-Security-Policy-Report-Only".
 const contentSecurityPolicy = [
   "default-src 'self'",
   `script-src 'self' 'unsafe-inline'${isDev ? " 'unsafe-eval'" : ""}`,
@@ -20,7 +22,7 @@ const contentSecurityPolicy = [
 
 const securityHeaders = [
   {
-    key: "Content-Security-Policy-Report-Only",
+    key: "Content-Security-Policy",
     value: contentSecurityPolicy,
   },
   { key: "X-Frame-Options", value: "SAMEORIGIN" },

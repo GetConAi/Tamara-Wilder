@@ -10,6 +10,7 @@ const navLinks = [
 const legalLinks = [
   { href: "/privacy-policy.html", label: "Privacy Policy" },
   { href: "/terms-of-service.html", label: "Terms of Service" },
+  { href: "/privacy-policy.html#cookies", label: "Cookie Policy" },
 ];
 
 export default function Footer() {

@@ -43,6 +43,9 @@ export default function EmailSignup({
         <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-3">
           <input
             type="email"
+            name="email"
+            autoComplete="email"
+            aria-label="Email address"
             required
             value={email}
             onChange={(e) => setEmail(e.target.value)}
